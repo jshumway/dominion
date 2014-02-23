@@ -14,7 +14,7 @@ exclusive_sets = [
     set(["king's court", 'throne room', 'procession']),
     set(['bishop', 'fortress']),
     set(['bandit camp', 'bazaar', 'fortress', 'mining village', 'village',
-        "worker's village"])
+        "worker's village",'city'])
 ]
 
 FAIL_THRESHOLD = 10
