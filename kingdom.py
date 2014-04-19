@@ -136,7 +136,9 @@ def main():
 
     args = parser.parse_args()
     display_set(create_kingdom(args), args.script_output)
-    print 'each player starts with %d cards' % (random.randint(2, 5))
+    copper_count = random.randint(2, 5)
+    print 'each player starts with %d coppers and %d estates' % (
+        copper_count, 5 - copper_count)
 
 
 if __name__ == '__main__':
