@@ -22,11 +22,12 @@ FAIL_THRESHOLD = 10
 terminal = blessings.Terminal()
 
 color_map = {
-    'DO': terminal.blue,
+    'DA': terminal.bright_red,
     'DC': terminal.blue,
+    'DO': terminal.blue,
     'IN': terminal.bright_magenta,
     'PR': terminal.yellow,
-    'DA': terminal.bright_red,
+    'SE': terminal.green,
 }
 
 

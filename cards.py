@@ -28,6 +28,14 @@ intrigue_cards = Expansion('IN', 'Intrigue', [
     'tribute', 'upgrade', 'wishing well'
 ])
 
+seaside_cards = Expansion('SE', 'Seaside', [
+    'ambassador', 'bazaar', 'caravan', 'cutpurse', 'embargo', 'explorer',
+    'fishing village', 'ghost ship', 'haven', 'island', 'lighthouse',
+    'lookout', 'merchant ship', 'native village', 'navigator', 'outpost',
+    'pearl diver', 'pirate ship', 'salvager', 'sea hag', 'smugglers',
+    'tactician', 'treasure map', 'treasury', 'warehouse', 'wharf'
+])
+
 prosperity_cards = Expansion('PR', 'Prosperity', [
     'bank', 'bishop', 'city', 'contraband', 'counting house', 'expand',
     'forge', 'goons', 'grand market', 'hoard', "king's court", 'loan', 'mint',
@@ -50,6 +58,7 @@ expansion_list = [
     base_cards,
     base_core_cards,
     intrigue_cards,
+    seaside_cards,
     prosperity_cards,
     dark_ages_cards,
 ]
