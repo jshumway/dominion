@@ -10,6 +10,13 @@ import blessings
 
 import cards
 
+bullshit = {
+    # Intrigue.
+    'saboteur',
+    'scout',
+    'swindler',
+}
+
 exclusive_sets = [
     set(["king's court", 'throne room', 'procession']),
     set(['bishop', 'fortress']),
@@ -106,6 +113,9 @@ def create_kingdom(args):
     for expansion_id in expansions:
         card_pool.update(cards.expansions[expansion_id].cards)
 
+    if args.no_bullshit:
+        forbidden = forbidden.union(bullshit)
+
     card_pool.difference_update(forbidden)
     card_pool.difference_update(required)
 
@@ -134,6 +144,9 @@ def main():
     parser.add_argument(
         '-s', '--script-output', action='store_true',
         help='format output in a script friendly way')
+    parser.add_argument(
+        '-n', '--no-bullshit', action='store_true',
+        help='prevent "bullshit" cards from being included')
 
     args = parser.parse_args()
     display_set(create_kingdom(args), args.script_output)
